@@ -4,7 +4,7 @@ interface MultipleSum{
 }
 class Multiple3or5 (var multipleOf3:Int=3,var multipleOf5: Int=5):MultipleSum{
     var sum:Int=0
-    fun sum3(){
+    private fun sum3(){
         sum+=multipleOf3
         multipleOf3+=3
     }
