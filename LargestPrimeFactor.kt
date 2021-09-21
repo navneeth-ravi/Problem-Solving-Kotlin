@@ -2,7 +2,7 @@ package `Problem-Solving-Kotlin`
 import java.util.Scanner
 fun main(){
     print("\tLargest Prime Factor Finder \nEnter Number:")
-    var inp=Scanner(System.`in`)
+    val inp=Scanner(System.`in`)
     var num= inp.nextLong()
     var max:Int=0
     max.plus(2)
