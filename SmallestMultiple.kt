@@ -4,11 +4,11 @@ fun check(number:Int):Boolean{
     for(i in checkList) if(number.rem(i)!=0)return false
     return true
 }
-fun solution(limit:Int):Int?{
+fun solution(limit:Int):Int{
     for(i in limit..Int.MAX_VALUE step 20 ){
         if(check(i))return i
     }
-    return null
+    return -1
 }
 fun main(){
     var result= solution(20)
