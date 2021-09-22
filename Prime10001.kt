@@ -1,11 +1,13 @@
 package `Problem-Solving-Kotlin`
 
+import java.lang.Math.sqrt
+
 fun main(){
     val result=10001
     var count=2
     var isPrime:(Int)->Boolean= {
         var result:Boolean=true
-        for (i in 3..it - 1) if(it % i == 0){
+        for (i in 3..sqrt(it.toDouble()).toInt()) if(it % i == 0){
             result=false
             break
         }
